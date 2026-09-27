@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinan - AI & Data Science Student</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen transition-colors duration-300">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold bg-gradient-to-r from-sky-500 to-blue-600 bg-clip-text text-transparent">
+                Sinan
+            </span>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-sky-500 transition-colors">About</a>
+                <a href="#education" class="hover:text-sky-500 transition-colors">Education</a>
+                <a href="#skills" class="hover:text-sky-500 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-sky-500 transition-colors">Projects</a>
+                <a href="#achievements" class="hover:text-sky-500 transition-colors">Achievements</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 space-y-24">
+
+        <!-- Hero / About Me Section -->
+        <section id="about" class="pt-4">
+            <div class="space-y-6 max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
+                    AI & Data Science Student @ CUSAT
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight">
+                    Hi, I'm <span class="bg-gradient-to-r from-sky-500 to-blue-600 bg-clip-text text-transparent">Sinan</span>
+                </h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
+                    Passionate student specializing in Artificial Intelligence & Data Science at Cochin University of Science and Technology (CUSAT).
+                </p>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    Exploring fundamental programming concepts, data analysis, and software development to solve real-world problems.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <i data-lucide="graduation-cap" class="text-sky-500"></i> Education
+            </h2>
+            <div class="border-l-2 border-sky-500/30 pl-6 space-y-8">
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-sky-500 border-4 border-slate-50 dark:border-slate-900"></div>
+                    <span class="text-xs font-semibold text-sky-500 uppercase tracking-wider">Undergraduate</span>
+                    <h3 class="text-xl font-bold mt-1">B.Tech in Artificial Intelligence & Data Science</h3>
+                    <p class="text-slate-600 dark:text-slate-400 font-medium">Cochin University of Science and Technology (CUSAT)</p>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">
+                        Focusing on artificial intelligence, data engineering, machine learning foundations, and core programming principles.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <i data-lucide="code" class="text-sky-500"></i> Skills & Technologies
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-semibold text-lg mb-2 text-sky-500 flex items-center gap-2">
+                        <i data-lucide="code-2" class="w-5 h-5"></i> Programming Language
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-300 font-medium">C Language</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-semibold text-lg mb-2 text-sky-500 flex items-center gap-2">
+                        <i data-lucide="brain" class="w-5 h-5"></i> Core Focus
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-300 font-medium">Artificial Intelligence & Data Science Fundamentals</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <i data-lucide="folder-git-2" class="text-sky-500"></i> Projects & Works
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-bold">Personal Portfolio Website</h3>
+                        <span class="text-xs px-2.5 py-1 bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-300 rounded-full font-medium">Web</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        A modern, responsive personal portfolio website built with HTML, Tailwind CSS, and JavaScript.
+                    </p>
+                </div>
+                <div class="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-bold">C Programming Projects</h3>
+                        <span class="text-xs px-2.5 py-1 bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-300 rounded-full font-medium">C</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Building core logic, data structures, and algorithmic solutions using C programming.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <i data-lucide="award" class="text-sky-500"></i> Achievements & Activities
+            </h2>
+            <div class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
+                <ul class="space-y-4 text-slate-600 dark:text-slate-300 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-sky-500 w-5 h-5 shrink-0 mt-0.5"></i>
+                        <span>Admitted to the B.Tech AI & Data Science program at CUSAT.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-sky-500 w-5 h-5 shrink-0 mt-0.5"></i>
+                        <span>Actively building programming projects in C language and learning core computer science concepts.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
+        <p>© Sinan • AI & Data Science @ CUSAT</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
